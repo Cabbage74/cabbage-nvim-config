@@ -80,7 +80,7 @@ return {
             callback = function()
                 vim.opt.cmdheight = 1
                 vim.opt.laststatus = 3
-                vim.opt.showtabline = 0
+                vim.opt.showtabline = 2
             end,
         })
     end,
