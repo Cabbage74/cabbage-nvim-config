@@ -52,6 +52,20 @@ return {
                 })
             end,
             desc = "find file"
+        },
+        {
+            "<leader>oc",
+            function()
+                require("telescope").extensions.file_browser.file_browser({
+                    path = vim.fn.stdpath("config"),
+                    select_buffer = true,
+                    respect_gitignore = false,
+                    hidden = true,
+                    grouped = true,
+                    initial_mode = "insert",
+                })
+            end,
+            desc = "find config"
         }
     }
 }

@@ -37,6 +37,16 @@ return {
                 })
             end),
             dashboard.button("r", "  Recent Files", ":Telescope oldfiles<CR>"),
+            dashboard.button("c", "  Find Configs", function()
+                require("telescope").extensions.file_browser.file_browser({
+                    path = vim.fn.stdpath("config"),
+                    select_buffer = true,
+                    respect_gitignore = false,
+                    hidden = true,
+                    grouped = true,
+                    initial_mode = "insert",
+                })
+            end),
             dashboard.button("u", "  Update Plugins", ":Lazy sync<CR>"),
             dashboard.button("q", "  Quit", ":qa<CR>"),
         }
