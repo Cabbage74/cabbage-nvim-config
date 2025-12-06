@@ -8,5 +8,6 @@ return {
     opts = {
         direction = "float",
         start_in_insert = true,
+        persist_mode = false,
     },
 }

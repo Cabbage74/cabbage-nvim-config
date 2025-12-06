@@ -16,6 +16,16 @@ return {
         local actions = require("telescope.actions")
 
         telescope.setup({
+            defaults = {
+                mappings = {
+                    ["i"] = {
+                        ["<Tab>"] = actions.select_default,
+                    },
+                    ["n"] = {
+                        ["<Tab>"] = actions.select_default,
+                    },
+                },
+            },
             extensions = {
                 fzf = {
                     fuzzy = true,
