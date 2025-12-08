@@ -24,7 +24,7 @@ return {
             ["<Down>"] = { "select_next", "fallback" },
             ["<C-p>"] = { "select_prev", "fallback" },
             ["<C-n>"] = { "select_next", "fallback" },
-            ["<CR>"] = { "fallback" },
+            ["<CR>"] = { "hide", "fallback" },
             ["<C-space>"] = { "show", "show_documentation", "hide_documentation" },
             ["<C-e>"] = { "hide" },
             ["<C-b>"] = { "scroll_documentation_up", "fallback" },

@@ -11,6 +11,7 @@ return {
         local servers = {
             ["lua-language-server"] = {},
             ["rust-analyzer"] = {},
+            ["marksman"] = {},
             ["clangd"] = {
                 cmd = {
                     "clangd",
