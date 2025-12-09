@@ -44,7 +44,7 @@ return {
         })
 
         for mason_name, config in pairs(servers) do
-            local lsp_name = mappings.package_to_lspconfig[mason_name] or mason_name 
+            local lsp_name = mappings.package_to_lspconfig[mason_name] or mason_name
             vim.lsp.config(lsp_name, config)
             vim.lsp.enable(lsp_name)
         end
@@ -53,5 +53,6 @@ return {
             virtual_text = true,
             severity_sort = true,
         })
+
     end,
 }
