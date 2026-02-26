@@ -83,14 +83,15 @@ return {
                 vim.opt.cmdheight = 0
                 vim.opt.laststatus = 0
                 vim.opt.showtabline = 0
-            end,
-        })
-        vim.api.nvim_create_autocmd("BufUnload", {
-            buffer = 0,
-            callback = function()
-                vim.opt.cmdheight = 1
-                vim.opt.laststatus = 3
-                vim.opt.showtabline = 2
+
+                vim.api.nvim_create_autocmd("BufUnload", {
+                    buffer = 0,
+                    callback = function()
+                        vim.opt.cmdheight = 1
+                        vim.opt.laststatus = 3
+                        vim.opt.showtabline = 2
+                    end,
+                })
             end,
         })
     end,
