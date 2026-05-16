@@ -76,6 +76,11 @@ return {
                 })
             end,
             desc = "find config"
-        }
+        },
+        {
+            "<leader>os",
+            "<cmd>Telescope lsp_dynamic_workspace_symbols<CR>",
+            desc = "find symbol"
+        },
     }
 }

@@ -12,6 +12,16 @@ return {
             ["lua-language-server"] = {},
             ["rust-analyzer"] = {},
             ["marksman"] = {},
+            ["pyright"] = {
+                settings = {
+                    python = {
+                        analysis = {
+                            typeCheckingMode = "off",
+                        }
+                    }
+                }
+            },
+            ["gopls"] = {},
             ["clangd"] = {
                 cmd = {
                     "clangd",
@@ -54,5 +64,6 @@ return {
             severity_sort = true,
         })
 
+        vim.keymap.set('n', 'gl', vim.diagnostic.open_float, { noremap = true, silent = true, desc = "show diagnostic float" })
     end,
 }
